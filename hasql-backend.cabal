@@ -1,7 +1,7 @@
 name:
   hasql-backend
 version:
-  0.4.2
+  0.4.2.1
 synopsis:
   API for backends of "hasql"
 description:
@@ -11,9 +11,9 @@ description:
 category:
   Database
 homepage:
-  https://github.com/nikita-volkov/hasql-backend 
+  https://github.com/nikita-volkov/hasql-backend
 bug-reports:
-  https://github.com/nikita-volkov/hasql-backend/issues 
+  https://github.com/nikita-volkov/hasql-backend/issues
 author:
   Nikita Volkov <nikita.y.volkov@mail.ru>
 maintainer:
@@ -46,16 +46,16 @@ library
     Hasql.Backend
   build-depends:
     -- data:
-    bytestring < 0.11,
-    text < 2,
-    vector < 0.12,
+    bytestring,
+    text,
+    vector,
     -- control:
-    either >= 4.3 && < 5,
-    free >= 4.6 && < 5,
-    list-t < 0.5,
-    transformers >= 0.3 && < 0.5,
+    either,
+    free >= 4.6,
+    list-t,
+    transformers >= 0.3,
     -- general:
-    base-prelude < 0.2
+    base-prelude
   default-extensions:
     Arrows, BangPatterns, ConstraintKinds, DataKinds, DefaultSignatures, DeriveDataTypeable, DeriveFunctor, DeriveGeneric, EmptyDataDecls, FlexibleContexts, FlexibleInstances, FunctionalDependencies, GADTs, GeneralizedNewtypeDeriving, ImpredicativeTypes, LambdaCase, LiberalTypeSynonyms, MagicHash, MultiParamTypeClasses, MultiWayIf, NoImplicitPrelude, NoMonomorphismRestriction, OverloadedStrings, PatternGuards, ParallelListComp, QuasiQuotes, RankNTypes, RecordWildCards, ScopedTypeVariables, StandaloneDeriving, TemplateHaskell, TupleSections, TypeFamilies, TypeOperators, UnboxedTuples
   default-language:
